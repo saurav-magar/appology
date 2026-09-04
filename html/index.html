@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I Was Wrong</title>
+    <link rel="icon" type="image/webp" href="../image/icon.webp">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+
+    <div class="stage" id="stage">
+
+        <section class="page active" data-index="0">
+            <div class="page-inner">
+                <p class="hero-line">I was wrong, and I know it now.</p>
+                <p class="hero-sub">a letter for you</p>
+                <button class="advance" data-next>begin reading</button>
+            </div>
+        </section>
+
+        <section class="page" data-index="1">
+            <div class="page-inner">
+                <p class="kicker">First — the truth of it</p>
+                <h2>I hurt you, and I don't want to look away from that.</h2>
+                <p class="drop-cap">There's a version of me that wants to explain, to soften the edges of what happened
+                    until it's easier to hold. But you don't need my explanations right now. You need to know that I see
+                    it plainly: I let you down, and the weight of that is mine to carry, not yours.</p>
+                <p>I keep replaying the moment I could have chosen differently and didn't. I'm not writing this to be
+                    forgiven. I'm writing it because you deserve to hear, in plain words, that I know exactly what I
+                    did.</p>
+                <button class="advance" data-next>keep reading</button>
+            </div>
+        </section>
+
+        <section class="page" data-index="2">
+            <div class="page-inner">
+                <p class="kicker">Then — what I should have done</p>
+                <h2>You trusted me with something that mattered, and I was careless with it.</h2>
+                <p>Trust between people isn't a given — it's built out of small moments of showing up. I forgot that for
+                    a while. I let distraction, or pride, or my own tangled feelings get in the way of treating what we
+                    have with the care it deserves.</p>
+                <div class="vow-block">
+                    <p>You are not too much. Your hurt is not an overreaction. I will not ask you to make this smaller
+                        than it is.</p>
+                </div>
+                <p>I don't want to be someone who apologizes and then forgets. I want this to actually change something
+                    in how I show up tomorrow, and the day after that.</p>
+                <button class="advance" data-next>keep reading</button>
+            </div>
+        </section>
+
+        <section class="page" data-index="3">
+            <div class="page-inner">
+                <p class="kicker">And now — what I'm doing about it</p>
+                <h2>Being sorry isn't a feeling I get to have once and move on from.</h2>
+                <p class="drop-cap">It's easy to say the words. It's harder to actually change the behavior that made
+                    them necessary. So this isn't just an apology for one moment — it's a promise to pay closer
+                    attention, to not let the same carelessness repeat itself, and to show that through what I do next,
+                    not just what I say now.</p>
+                <p>I'm not asking you to explain it to me again, or to manage my feelings about having hurt you. That's
+                    not your job. All I'm asking is for the chance to prove, over time, that this apology means
+                    something.</p>
+                <button class="advance" data-next>one more page</button>
+            </div>
+        </section>
+
+        <section class="page" data-index="4">
+            <div class="page-inner">
+                <p class="close-line">I'm not asking you to forget what happened. I'm asking for the chance to be better
+                    than the moment I let you down.</p>
+                <button class="seal" id="sealBtn" aria-expanded="false">break<br>the seal</button>
+                <p class="seal-caption" id="sealCaption">&nbsp;</p>
+                <div class="revealed" id="revealed">
+                    <p>I'm sorry — fully, without conditions, for what I did.</p>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <button class="prev-hit" id="prevHit" aria-label="Previous page"></button>
+    <button class="next-hit" id="nextHit" aria-label="Next page"></button>
+    <div class="dots" id="dots"></div>
+    <script src="../js/script.js"></script>
+
+</body>
+
+</html>
